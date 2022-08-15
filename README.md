@@ -108,3 +108,22 @@ Feature selection methods uses in this study are as follows:
 \[4\] minimal depth  
 \[5\] feature hunting  
 \[6\] ranger impurity
+
+# Machine learning pipeline
+
+![](Docs/pipeline.png)
+
+# Code
+
+`Targets` package is used in this study for arranging a pipeline for all
+the study steps from the data preparation to data analysis. Two
+pipelines are included in this study, (1) the accessibility pipeline
+(`accessibility_targets.R`) and (2) the main pipeline (`_targets.R`).
+The accessibility command includes the process of retrieving raw data
+(i.e., land-use, transportation network, and OSM data), finding each
+suburbs’ land-use status, households’ travel time to work and school
+using car and public transport, and calculating the 30-minute
+accessibility of each suburb members to jobs. The main pipeline includes
+the data preparation, model preparations, regression modelling, machine
+learning benchmark, and post-processing steps. `tar_make()` command can
+be used for running each pipeline.
