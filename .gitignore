@@ -1,0 +1,8 @@
+.Rprofile
+.Rproj.user/
+.Rhistory
+_targets
+registry
+.DS_Store
+accessibility
+tmp_files/

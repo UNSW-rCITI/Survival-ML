@@ -1,0 +1,9 @@
+main:
+  reporter_make: summary
+  script: _targets.R
+  store: _targets
+  # shortcut: TRUE
+accessibility:
+  script: accessibility_targets.R
+  store: accessibility
+  inherits: _targets
